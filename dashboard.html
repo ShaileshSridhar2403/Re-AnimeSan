@@ -1,0 +1,538 @@
+﻿<!DOCTYPE html>
+<html>
+<title>Re;Anime-San</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="sheet1.css">
+
+<style>
+    html, body, h1, h2, h3, h4, h5 {
+        font-family: "Impact";
+        
+    }
+    p.head {
+        text-align: center;
+        color:;
+        font-size: 50px;
+        font-family: fantasy;
+    }
+
+    ul.bar {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #005;
+        font-family: fantasy;
+    }
+
+    li.bar {
+        display: block;
+        float: left;
+        width: 25%;
+        color: #005;
+    }
+
+    a.top {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 50px 14px 50px;
+        text-decoration: none;
+    }
+
+        a.h:hover {
+            background-color: #003;
+        }
+
+    .dropbtn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+        /* Dropdown button on hover & focus */
+        .dropbtn:hover, .dropbtn:focus {
+            background-color: #3e8e41;
+        }
+
+    /* The container <div> - needed to position the dropdown content */
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    /* Dropdown Content (Hidden by Default) */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+        /* Links inside the dropdown */
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+            /* Change color of dropdown links on hover */
+            .dropdown-content a:hover {
+                background-color: #f1f1f1
+            }
+
+    /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+    .show {
+        display: block;
+    }
+</style>
+
+<body class="reanime-light-grey" style='background-image:url("back.jpg"); background-attachment:fixed;'>
+    <header>
+        <a class ="top" href="home.html">
+            
+        </a>
+        <ul class="bar">
+            <li class="bar"><a class="h top" href="home.html">Home</a></li>
+            <li class="bar"><a class="h top" href="top20.html">TOP 20</a></li>
+            <li class="bar"><a class="h top" href="#contact">Dashboard</a></li>
+            <li class="bar"><a class="h top" href="#about">About</a></li>
+        </ul>
+    </header>
+    <!-- Top container -->
+    <div class="reanime-bar reanime-top reanime-black reanime-large" style="z-index:4">
+        <button class="reanime-bar-item reanime-button reanime-hide-large reanime-hover-none reanime-hover-text-light-grey" onclick="reanime_open();"><i class="fa fa-bars"></i>  Menu</button>
+        <span class="reanime-bar-item reanime-right" style="font-family:fantasy"><img src="logo.png" height="20" />Re;Anime-San </span>
+    </div>
+
+    <!-- Sidebar/menu -->
+    <nav class="reanime-sidebar reanime-collapse reanime-white reanime-animate-left" style="z-index:3;width:300px;" id="mySidebar">
+        <br>
+        <div class="reanime-container reanime-row">
+           
+            <div class="reanime-col s8 reanime-bar">
+                <span>Welcome, <strong>SH</strong></span><br>
+                <a href="#" class="reanime-bar-item reanime-button"><i class="fa fa-envelope"></i></a>
+                <a href="#" class="reanime-bar-item reanime-button"><i class="fa fa-user"></i></a>
+                <a href="#" class="reanime-bar-item reanime-button"><i class="fa fa-cog"></i></a>
+            </div>
+        </div>
+        <hr>
+        <div class="reanime-bar-block">
+            <a href="#" class="reanime-bar-item reanime-button reanime-padding-16 reanime-hide-large reanime-dark-grey reanime-hover-black" onclick="reanime_close()" title="close menu"><i class="fa fa-remove fa-fw"></i>  Close Menu</a>
+            <a href="#" class="reanime-bar-item reanime-button reanime-padding"><i class="fa fa-users fa-fw"></i>My Anime List</a>
+            <a href="#feeds" class="reanime-bar-item reanime-button reanime-padding"><i class="fa fa-eye fa-fw"></i>Feeds</a>
+            <span href="#settings" class="reanime-bar-item reanime-blue reanime-padding">Preferences</span>
+            <form>
+                <span class="reanime-bar-item reanime-padding">Anime 1:</span>
+                <select class="reanime-bar-item reanime-padding">
+                    <option>Fullmetal Alchemist:Brotherhood</option>
+                    <option>Hunter x Hunter</option>
+                    <option>Code Geass</option>
+                    <option>Steins;Gate</option>
+                    <option>Boku no Hero Academia</option>
+                    <option>Shingeki no Kyojin</option>
+                    <option>Haikyuu</option>
+                    <option>Boku dake ga Inai Machi (Erased)<</option>
+                    <option>One Punch Man</option>
+                    <option>Sket Dance</option>
+                    <option>Zankyou no Terror</option>
+                    <option>Chihayafuru</option>
+                    <option>Kimi no Na wa</option>
+                    <option>Koe no Katachi</option>
+                    <option>Ping Pong The Animation</option>
+                    <option>Fairy Tale</option>
+                    <option>One Piece</option>
+                    <option>Assassination Classroom</option>
+                    <option>Black Lagoon</option>
+                    <option >Bleach</option>
+                    
+                </select>
+                <span class="reanime-bar-item reanime-padding">Anime 2:</span>
+                <select class="reanime-bar-item reanime-padding">
+                    <option>Fullmetal Alchemist:Brotherhood</option>
+                    <option>Hunter x Hunter</option>
+                    <option>Code Geass</option>
+                    <option>Steins;Gate</option>
+                    <option>Boku no Hero Academia</option>
+                    <option>Shingeki no Kyojin</option>
+                    <option>Haikyuu</option>
+                    <option>Boku dake ga Inai Machi (Erased)</option>
+                    <option>One Punch Man</option>
+                    <option>Sket Dance</option>
+                    <option>Zankyou no Terror</option>
+                    <option>Chihayafuru</option>
+                    <option>Kimi no Na wa</option>
+                    <option>Koe no Katachi</option>
+                    <option>Ping Pong The Animation</option>
+                    <option>Fairy Tale</option>
+                    <option>One Piece</option>
+                    <option>Assassination Classroom</option>
+                    <option>Black Lagoon</option>
+                    <option>Bleach</option>
+
+                </select>
+                <span class="reanime-bar-item reanime-padding">Anime 3:</span>
+                <select class="reanime-bar-item reanime-padding">
+                    <option>Fullmetal Alchemist:Brotherhood</option>
+                    <option>Hunter x Hunter</option>
+                    <option>Code Geass</option>
+                    <option>Steins;Gate</option>
+                    <option>Boku no Hero Academia</option>
+                    <option>Shingeki no Kyojin</option>
+                    <option>Haikyuu</option>
+                    <option>Boku dake ga Inai Machi (Erased)</option>
+                    <option>One Punch Man</option>
+                    <option>Sket Dance</option>
+                    <option>Zankyou no Terror</option>
+                    <option>Chihayafuru</option>
+                    <option>Kimi no Na wa</option>
+                    <option>Koe no Katachi</option>
+                    <option>Ping Pong The Animation</option>
+                    <option>Fairy Tale</option>
+                    <option>One Piece</option>
+                    <option>Assassination Classroom</option>
+                    <option>Black Lagoon</option>
+                    <option>Bleach</option>
+
+                </select>
+                <span class="reanime-bar-item reanime-padding">Anime 4:</span>
+                <select class="reanime-bar-item reanime-padding">
+                    <option>Fullmetal Alchemist:Brotherhood</option>
+                    <option>Hunter x Hunter</option>
+                    <option>Code Geass</option>
+                    <option>Steins;Gate</option>
+                    <option>Boku no Hero Academia</option>
+                    <option>Attack On Titan</option>
+                    <option>Haikyuu</option>
+                    <option>Boku dake ga Inai Machi (Erased)</option>
+                    <option>One Punch Man</option>
+                    <option>Sket Dance</option>
+                    <option>Zankyou no Terror</option>
+                    <option>Chihayafuru</option>
+                    <option>Kimi no Na wa</option>
+                    <option>Koe no Katachi</option>
+                    <option>Ping Pong The Animation</option>
+                    <option>Fairy Tale</option>
+                    <option>One Piece</option>
+                    <option>Assassination Classroom</option>
+                    <option>Black Lagoon</option>
+                    <option>Bleach</option>
+
+                </select>
+
+            </form>
+        </div>
+        
+    </nav>
+
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="reanime-overlay reanime-hide-large reanime-animate-opacity" onclick="reanime_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+    <div class="reanime-main" style="margin-left:300px;margin-top:43px;">
+
+        <!-- Header -->
+        <header class="reanime-container" style="padding-top:22px">
+            <h1 style="color:lawngreen;"><b><i class="fa fa-dashboard"></i>My Dashboard</b></h1>
+        </header>
+
+        <div class="reanime-row-padding reanime-margin-bottom">
+            <h2 style="color:white;">My Anime List</h2>
+            <a href="FMAB\\fma.html">
+                <div class="reanime-quarter" style="transform:scale(1);">
+                    <div class="reanime-container reanime-red reanime-padding-16" style='height:300px;position:relative;'>
+                        <h3>FullMetal Alchemist : Brotherhood</h3>
+
+                        <img src="fmab.png" width="120" style="position:absolute; display:block; bottom:30px; left:50%;
+    transform:translateX(-50%);" />
+
+                    </div>
+                </div>
+            </a>
+            <a href='Sket Dance\\sket.html'>
+                <div class="reanime-quarter" style="transform:scale(1);">
+                    <div class="reanime-container reanime-blue reanime-padding-16" style="height:300px;position:relative;">
+                        <h3>Sket Dance</h3>
+            
+
+            <img src="sketdance.jpg" width="120" style="position:absolute; display:block; bottom:30px; left:50%;
+    transform:translateX(-50%);" />
+        </div>
+                    
+            </div>
+                </a>
+            <a href='Attack On Titan\\aot.html'>
+                <div class="reanime-quarter" style="transform:scale(1);">
+                    <div class="reanime-container reanime-teal reanime-padding-16" style="height:300px;position:relative;">
+
+                        <h3>Attack on Titan</h3>
+                        <img src="aot.jpg" width="120" style="position:absolute; display:block; bottom:30px; left:50%;
+    transform:translateX(-50%);" />
+                    </div>
+                </div>
+                </a>
+            <a href='Zankyou no Terror\\terror.html'>
+                <div class="reanime-quarter" style="transform:scale(1);">
+                    <div class="reanime-container reanime-orange reanime-text-white reanime-padding-16" style="height:300px;position:relative;">
+
+
+                        <h3>Zankyou no Terror</h3>
+
+            
+                        <img src="terror.jpg" width="120" style="position:absolute; display:block; bottom:30px; left:50%;
+    transform:translateX(-50%);" />
+                    </div>
+
+                </div>
+            </a>
+</div>
+
+        <div class="reanime-panel">
+            <div class="reanime-row-padding" style="margin:0 -16px">
+                <div>
+                    <h5 style="color:white;">Feeds</h5>
+                    <table id="feeds" class="reanime-table reanime-striped reanime-white" style='width:100%;'>
+                        <tr>
+                            <td><i class="fa fa-user reanime-text-blue reanime-large"></i></td>
+                            <td>New record, over 90 views.</td>
+                            <td><a href=""><i>Link</i></a></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-bell reanime-text-red reanime-large"></i></td>
+                            <td>Database error.</td>
+                            <td><a href=""><i>Link</i></a></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-users reanime-text-yellow reanime-large"></i></td>
+                            <td>New record, over 40 users.</td>
+                            <td><a href=""><i>Link</i></a></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-comment reanime-text-red reanime-large"></i></td>
+                            <td>New comments.</td>
+                            <td><a href=""><i>Link</i></a></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-bookmark reanime-text-blue reanime-large"></i></td>
+                            <td>Check transactions.</td>
+                            <td><a href=""><i>Link</i></a></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-laptop reanime-text-red reanime-large"></i></td>
+                            <td>CPU overload.</td>
+                            <td><a href=""><i>Link</i></a></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-share-alt reanime-text-green reanime-large"></i></td>
+                            <td>New shares.</td>
+                            <td><a href=""><i>Link</i></a></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa fa-bookmark reanime-text-blue reanime-large"></i></td>
+                            <td>Check transactions.</td>
+                            <td><a href=""><i>Link</i></a></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <hr>
+        
+        
+
+        
+        <br>
+
+        <div class="reanime-container reanime-dark-grey reanime-padding-32">
+            
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script>
+        
+        var blocks = document.body.querySelectorAll(".reanime-quarter");
+        for (var i = 0; i < blocks.length; i++) {
+            
+            blocks[i].addEventListener("mouseover", function(){
+                
+                this.style.transform = "scale(1.1)";
+            })
+            blocks[i].addEventListener("mouseout", function () {
+
+                this.style.transform = "scale(1)";
+            })
+        }
+        
+// Get the Sidebar
+var mySidebar = document.getElementById("mySidebar");
+
+// Get the DIV with overlay effect
+var overlayBg = document.getElementById("myOverlay");
+
+// Toggle between showing and hiding the sidebar, and add overlay effect
+function reanime_open() {
+    if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+        overlayBg.style.display = "none";
+    } else {
+        mySidebar.style.display = 'block';
+        overlayBg.style.display = "block";
+    }
+}
+
+// Close the sidebar with the close button
+function reanime_close() {
+    mySidebar.style.display = "none";
+    overlayBg.style.display = "none";
+}
+function aniBlock(name, image,index,news,link) {
+    this.name = name;
+    this.image = image;
+    this.index = index;
+    this.news = news;
+    this.link = link;
+};
+function newsEle(title,link){
+    this.title = title;
+    this.link = link;
+};
+
+var tableRows = document.getElementById("feeds").rows;
+
+
+var block = new Array();
+block.push(new aniBlock("FullMetal Alchemist", "fmab.png", 0, new Array(new newsEle('The FullMetal Live Action Movie Might Get a Sequel', "fmab1.html"), new newsEle('New Manga Chapters for FullMetal Alchemist', "fmab2.html")), 'FMAB\\fma.html'));
+block.push(new aniBlock("Hunter x Hunter", "hxh.jpg", 1, new Array(new newsEle('Best Hunter x Hunter cosplay you will ever see', "hxh1.html"), new newsEle('HxH to go on Hiatus again', "hxh2.html")), 'Hunter x Hunter\\hxh.html'));
+block.push(new aniBlock("Code Geass", "codegeass.jpeg",2,new Array(new newsEle('Second Code Geass Compilation Film to Premiere Feb 10 2018', "cg1.html"), new newsEle('Zeta Gundam and Code Geass', "cg2.html")),'Code geass\\code_geass.html'));
+block.push(new aniBlock("Steins;Gate", "steins_gate.jpg", 3, new Array(new newsEle('Some full animated steins gate elite action scenes', "steins1.html"), new newsEle('Steins Gate 0 is getting an anime', "steins2.html")), 'Steins Gate\\steins.html'));
+block.push(new aniBlock("Boku no Hero Academia", "myhero.jpg", 4, new Array(new newsEle('DC,Marvel artwork inspiration for MHA creator', "mha1.html"), new newsEle('Bones to produce MHA season 3', "mha2.html")), 'My Hero Academia\\academia.html'));
+block.push(new aniBlock("Attack On Titan", "aot.jpg", 5, new Array(new newsEle('AOT season 3 premiere date', "aot1.html"), new newsEle(' AOT Season 3 poster released', "aot2.html")), 'Attack On Titan\\aot.html'));
+block.push(new aniBlock("Haikyuu", "haikyuu.jpg", 6, new Array(new newsEle('No Haikyuu season 4 in 2017', "haikyuu1.html"), new newsEle('Watch Haikyuu Creator Sketch Hinata Live!', "haikyuu2.html")), 'Haikyuu\\Haikyuu.html'));
+block.push(new aniBlock("Boku dake ga Inai Machi (Erased)", "erased.jpg", 7, new Array(new newsEle('Live Action Trailer for Erased released', "erased1.html"), new newsEle('Season 2 of Erased to be made?', "erased2.html")), 'Erased\\Erased.html'));
+block.push(new aniBlock("One Punch Man", "opm.jpg", 8, new Array(new newsEle('One Punch Man artist reveals inspiration', "opm1.html"), new newsEle('One punch man chapter 84 hints at Huge Manga update', "opm2.html")), 'One Punch Man\\onepunchman.html'));
+block.push(new aniBlock("Sket Dance", "sketdance.jpg", 9, new Array(new newsEle("Astra Lost in Space is Sket Dance creator's next", "sket1.html"), new newsEle('Sketchbook, band inspired by Sket Dance, to break up', "sket2.html")), 'Sket Dance\\sket.html'));
+block.push(new aniBlock("Zankyou no Terror", "terror.jpg",10,new Array(new newsEle(' Why you should catch Zankyou no Terror on Netflix This Weekend', "zankyou1.html"), new newsEle('BD of Complete zankyou no terror series released', "zankyou2.html")),'Zankyou no Terror\\terror.html'));
+block.push(new aniBlock("Chihayafuru", "chihayafuru.jpg", 11, new Array(new newsEle('Chihayafuru Live Action Poster released', "chihayafuru.html"), new newsEle('Making of Chihayafuru and Detective Conan Collaboration', "chihayafuru2.html")), 'Chihayafuru\\chihayafuru.html'));
+block.push(new aniBlock("Kimi no Na wa", "yourname.jpg", 12, new Array(new newsEle('Kimi no Nawa Novel sequel', "kimi1.html"), new newsEle('Kimi no Nawa to receive Live Action Movie', "kimi2.html")), 'Kimi no Nawa\\yourname.html'));
+block.push(new aniBlock("Koe no Katachi", "silentvoice.jpg", 13, new Array(new newsEle('Koe no Katachi qualifies for an Oscar Nomination', "silent1.html"), new newsEle('An interview with the director of Koe no Katachi', "silent2.html")),'Koe no Katachi\\silentvoice.html'));
+block.push(new aniBlock("Ping Pong The Animation", "pingpong.jpg", 14, new Array(new newsEle('Ping Pong the Animation and Masaaki Yuaasa rally', "pingpong1.html"), new newsEle("Masaaki Yuaasa's the night is short Walk on girl wins big", "pingpong2.html")), 'ping pong\\pingpong.html'));
+block.push(new aniBlock("Fairy Tail", "ft.jpg", 15, new Array(new newsEle('A tribute to Fairy Tail', "ft1.html"), new newsEle('The Last Chapter of Fairy Tail is here', "ft2.html")), 'fairy tail\\Fairy Tail.html'));
+block.push(new aniBlock("One Piece", "onepiece.jpg", 16, new Array(new newsEle("Gear 4 isn't enough to stop katakuri", "onepiece1.html"), new newsEle('Weird chapter 885 of One Piece', "onepiece2.html")),'one piece\\One_piece.html'));
+block.push(new aniBlock("Assassination Classroom", "ac.jpg", 17, new Array(new newsEle('All kill attempts on korosensei', "ac1.html"), new newsEle('Assasination Classroom movie', "ac2.html")), 'Assassination classroom\\assassination-classroom.html'));
+block.push(new aniBlock("Black Lagoon", "blacklagoon.jpg", 18, new Array(new newsEle('Black Lagoon Anime Gets ReBroadcast', "bl1.html"), new newsEle('After 6 year Hiatus, Black Lagoon manga may return', "bl2.html")), 'black lagoon\\BlackLagoon.html'));
+block.push(new aniBlock("Bleach", "bleach.jpg", 19, new Array(new newsEle('Bleach manga to end in 74th Volume', "bleach1.html"), new newsEle('Bleach Manga gets Two Novels', "bleach2.html")), 'bleach\\bleach.html'));
+
+
+
+var sel = document.getElementsByTagName('select');
+sel[0].addEventListener('change', function () {
+    console.log(this.selectedIndex);
+    blocks[0].firstElementChild.firstElementChild.innerHTML = block[this.selectedIndex].name;
+    blocks[0].firstElementChild.lastElementChild.src = block[this.selectedIndex].image;
+    blocks[0].parentElement.href = block[this.selectedIndex].link;
+    tableRows[0].cells[1].innerHTML = block[this.selectedIndex].news[0].title;
+    tableRows[0].cells[2].firstElementChild.href = block[this.selectedIndex].news[0].link;
+    tableRows[1].cells[1].innerHTML = block[this.selectedIndex].news[1].title;
+    tableRows[1].cells[2].firstElementChild.href = block[this.selectedIndex].news[1].link;
+
+    sessionStorage.setItem('blocks0', JSON.stringify(block[this.selectedIndex]));
+})
+sel[1].addEventListener('change', function () {
+    
+    blocks[1].firstElementChild.firstElementChild.innerHTML = block[this.selectedIndex].name;
+    blocks[1].firstElementChild.lastElementChild.src = block[this.selectedIndex].image;
+    blocks[1].parentElement.href = block[this.selectedIndex].link;
+    tableRows[2].cells[1].innerHTML = block[this.selectedIndex].news[0].title;
+    tableRows[2].cells[2].firstElementChild.href = block[this.selectedIndex].news[0].link;
+    tableRows[3].cells[1].innerHTML = block[this.selectedIndex].news[1].title;
+    tableRows[3].cells[2].firstElementChild.href = block[this.selectedIndex].news[1].link;
+    sessionStorage.setItem('blocks1', JSON.stringify(block[this.selectedIndex]));
+})
+sel[2].addEventListener('change', function () {
+    
+    blocks[2].firstElementChild.firstElementChild.innerHTML = block[this.selectedIndex].name;
+    blocks[2].firstElementChild.lastElementChild.src = block[this.selectedIndex].image;
+    blocks[2].parentElement.href = block[this.selectedIndex].link;
+    tableRows[4].cells[1].innerHTML = block[this.selectedIndex].news[0].title;
+    tableRows[4].cells[2].firstElementChild.href = block[this.selectedIndex].news[0].link;
+    tableRows[5].cells[1].innerHTML = block[this.selectedIndex].news[1].title;
+    tableRows[5].cells[2].firstElementChild.href = block[this.selectedIndex].news[1].link;
+    sessionStorage.setItem('blocks2', JSON.stringify(block[this.selectedIndex]));
+})
+sel[3].addEventListener('change', function () {
+    
+    blocks[3].firstElementChild.firstElementChild.innerHTML = block[this.selectedIndex].name;
+    blocks[3].firstElementChild.lastElementChild.src = block[this.selectedIndex].image;
+    blocks[3].parentElement.href = block[this.selectedIndex].link;
+    tableRows[6].cells[1].innerHTML = block[this.selectedIndex].news[0].title;
+    tableRows[6].cells[2].firstChild.href = block[this.selectedIndex].news[0].link;
+    tableRows[7].cells[1].innerHTML = block[this.selectedIndex].news[1].title;
+    tableRows[7].cells[2].firstChild.href = block[this.selectedIndex].news[1].link;
+    sessionStorage.setItem('blocks3', JSON.stringify(block[this.selectedIndex]));
+    
+})
+
+//sessionStorage.setItem('block0', JSON.stringify(block[0]));
+        //console.log(JSON.parse(sessionStorage.getItem('block0')));
+if (sessionStorage.getItem('blocks0') != null) {
+    var bl0 = JSON.parse(sessionStorage.getItem('blocks0'));
+    blocks[0].firstElementChild.firstElementChild.innerHTML = bl0.name
+    blocks[0].firstElementChild.lastElementChild.src = bl0.image
+    blocks[0].parentElement.href = bl0.link;
+    tableRows[0].cells[1].innerHTML = bl0.news[0].title;
+    tableRows[0].cells[2].firstElementChild.href = bl0.news[1].link;
+    tableRows[1].cells[1].innerHTML = bl0.news[0].title;
+    tableRows[1].cells[2].firstElementChild.href = bl0.news[1].link;
+    sel[0].selectedIndex = bl0.index;
+}
+if (sessionStorage.getItem('blocks1') != null) {
+    var bl1 = JSON.parse(sessionStorage.getItem('blocks1'));
+    blocks[1].firstElementChild.firstElementChild.innerHTML = bl1.name;
+    blocks[1].firstElementChild.lastElementChild.src = bl1.image;
+    blocks[1].parentElement.href = bl1.link;
+    tableRows[2].cells[1].innerHTML = bl1.news[0].title;
+    tableRows[2].cells[2].firstElementChild.href = bl1.news[0].link;
+    tableRows[3].cells[1].innerHTML = bl1.news[1].title;
+    tableRows[3].cells[2].firstElementChild.href = bl1.news[1].link;
+    sel[1].selectedIndex = bl1.index;
+}
+if (sessionStorage.getItem('blocks2') != null) {
+    var bl2 = JSON.parse(sessionStorage.getItem('blocks2'));
+    blocks[2].firstElementChild.firstElementChild.innerHTML = bl2.name;
+    blocks[2].firstElementChild.lastElementChild.src = bl2.image;
+    blocks[2].parentElement.href = bl2.link;
+    tableRows[4].cells[1].innerHTML = bl2.news[0].title;
+    tableRows[4].cells[2].firstElementChild.href = bl2.news[0].link;
+    tableRows[5].cells[1].innerHTML = bl2.news[1].title;
+    tableRows[5].cells[2].firstElementChild.href = bl2.news[1].link;
+    sel[2].selectedIndex = bl2.index;
+}
+if (sessionStorage.getItem('blocks3') != null) {
+    var bl3 = JSON.parse(sessionStorage.getItem('blocks3'));
+    blocks[3].firstElementChild.firstElementChild.innerHTML = bl3.name;
+    blocks[3].firstElementChild.lastElementChild.src = bl3.image;
+    blocks[3].parentElement.href = bl3.link;
+    tableRows[6].cells[1].innerHTML = bl3.news[0].title;
+    tableRows[6].cells[2].firstElementChild.href = bl3.news[0].link;
+    tableRows[7].cells[1].innerHTML = bl3.news[1].title;
+    tableRows[7].cells[2].firstElementChild.href = bl3.news[1].link;
+    sel[3].selectedIndex = bl3.index;
+}
+
+
+
+    </script>
+
+</body>
+</html>

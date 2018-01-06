@@ -1,0 +1,134 @@
+<html>
+<head>
+	<title>
+	Re;AnimeSan
+	</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<style>
+body{
+padding:50px 200px 50px 200px;
+background-image:url('back.jpg');
+//background-image:url('bg2.png');
+background-size:100%;
+background-repeat:none;
+background-attachment:fixed;
+}
+p.head{
+text-align:center;
+color:red;
+font-size:50px;
+font-family:fantasy;
+}
+ul {
+	display: block;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:000066 ;
+	font-family:fantasy;
+
+}
+
+li {display: block;
+    float: left;
+	width:25%;
+	color:#003;
+}
+ a {
+    display:block;
+    color: white;
+    text-align: center;
+    padding: 14px 50px 14px 50px;
+    text-decoration: none;
+}
+
+a.h:hover {
+    background-color:000099;
+}
+
+.intro{
+	display:block;
+	background-color:black;//000066,33FF00
+	text-align: auto;
+	color:white;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 20px;
+	font-weight: 900;
+	opacity: 0.8;
+}
+footer {
+		position: relative;
+		height:50px;
+		width: 100%;
+		background-color: black;
+		padding: 0px 0px 0px 0px;
+}
+
+p.copyright {
+		position: auto;
+		width: 100%;
+		color: #fff;
+		line-height: 40px;
+		font-size: 0.7em;
+		text-align: center;
+		top:0;
+		font-family: fantasy;
+		font-size: 30px;
+}
+</style>
+
+<body>
+<header>
+<a  href="home.html">
+<p class='head' >
+	<img src='logo.png' alt='logo' width='50px' height='50px'> Re;AnimeSan</img>
+</p>
+</a>
+
+<ul>
+  <li><a class="h" href="home.html">Home</a></li>
+  <li><a class="h" href="top20.html">TOP 20</a></li>
+  <li><a class="h" href="#contact">Dashboard</a></li>
+  <li><a class="h" href="#about">About</a></li>
+</ul>
+</header>
+
+<div class='slides'>
+	<img class="mySlides" src="slide2.jpg" style="width:100%;height:50%">
+	<img class="mySlides" src="slide3.jpg" style="width:100%;height:50%">
+	<img class="mySlides" src="slide4.jpg" style="width:100%;height:50%">
+	<img class="mySlides" src="slide5.jpg" style="width:100%;height:50%">
+	<img class="mySlides" src="slide6.jpg" style="width:100%;height:50%">
+	<img class="mySlides" src="slide7.jpg" style="width:100%;height:50%">
+</div>
+<br/>
+<div class='intro'>
+The word anime is an abbreviation of the word animation. In Japan, the word is used to refer to all animation. However, outside of Japan, it has become the catch-all term for animation from Japan.<br/>
+For decades, anime was produced by and for Japan — a local product, with a distinct look-and-feel to not just the artwork but the storytelling, the themes and the concepts. Over the last forty years, it has become an international phenomenon, attracting millions of fans and being translated into many languages.<br/>
+Anime shows, like books or movies, fall into any number of existing genres: comedy, drama, sci-fi, action-adventure, horror and so on.Anime is as unlike most American cartoons like "Batman" and "Spider-Man" are different from the comics that run in daily papers.Anime has this way of making everything look fresh and new.<br/>
+It doesn't shy away from epic storylines, either, which often run for dozens (sometimes hundreds) of episodes. The best anime, though, no matter what their length, all demand great emotional involvement from the viewer. <br/>
+<span style="color:red">Re;AnimeSan</span> gives you ratings and reviews of the popular animes and along with the option to add your own review on the anime (provided you are already a member).
+</div>
+<script>
+var myIndex = 0;
+slideshow();
+
+function slideshow() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(slideshow, 2000); // Change image every 2 seconds
+}
+</script>
+<div>
+<footer>
+	<p class='copyright'>&copy;Copyright 2017-2020 All Rights Reserved</p>
+</footer></div>
+</body>
+<html>

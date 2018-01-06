@@ -1,0 +1,340 @@
+﻿<html>
+<head>
+    <title>
+        Re;AnimeSan
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<style>
+    body {
+        padding: 50px 200px 50px 200px;
+        background-image: url('bg.png');
+        background-size: 100%;
+        background-position: right;
+      //  text-align: center;
+        background-attachment: fixed;
+    }
+
+    #content{
+        height: 10em;
+        line-height:1.2em;
+        overflow: hidden;
+    }
+    #content1 {
+        height: 8.9em;
+        line-height: 1.2em;
+        overflow: hidden;
+    }
+    #content2 {
+        height: 8.9em;
+        line-height: 1.2em;
+        overflow: hidden;
+    }
+
+    p.head {
+        text-align: center;
+        color: red;
+        font-size: 50px;
+        font-family: fantasy;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: 009900;
+        font-family: fantasy;
+    }
+
+    li {
+      display: block;
+        float: left;
+        width: 25%;
+        color: #005;
+    }
+
+    a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 50px 14px 50px;
+        text-decoration: none;
+    }
+
+        a.h:hover {
+            background-color: 006600;
+        }
+    div {
+        margin: auto;
+        display: block;
+        background: lightgray;
+        color: black;
+        font-family: fantasy;
+        font-size: 40px;
+    }
+    div2 {
+        padding: 10px;
+        font-family: fantasy;
+        color: black;
+
+        margin: auto;
+        display: block;
+        height: auto;
+        background-color: rgba(211,211,211, 0.7);
+
+        background-size: 100%;
+    }
+    hr{
+        color: black;
+        display:block;
+
+    }
+    section_title{
+        font-family:Impact;
+        font-weight:bold;
+        text-decoration-line:underline;
+    }
+    review{
+        border:   0.5px solid black;
+        background-color: lightgray;
+        opacity :0.7;
+        display: block;
+        font-family: fantasy;
+    }
+    score{
+
+        width:100%;
+        font-size: 50px;
+        padding:10px;
+        margin:2px;
+        float: left;
+        font-family: Impact;
+        background: Black;
+        color:white;
+    }
+    reviewer{
+        font-size:20px;
+        padding-top: 10px;
+        padding-bottom:10px ;
+        display:block;
+        background-color: 009900;
+        color: white;
+    }
+    footer {
+        position: relative;
+        height:50px;
+        width: 100%;
+        background-color: black;
+        padding: 0px 0px 0px 0px;
+    }
+
+    p.copyright {
+        position: auto;
+        width: 100%;
+        color: #fff;
+        line-height: 40px;
+        font-size: 0.7em;
+        text-align: center;
+        top:0;}
+</style>
+<body>
+    <header>
+        <a href="..\home.html">
+            <p class='head'>
+                <img src='logo.png' alt='logo' width='50px' height='50px'> Re;AnimeSan</img>
+            </p>
+        </a>
+        <ul>
+            <li><a class="h" href="..\home.html">Home</a></li>
+            <li><a class="h" href="..\top20.html">TOP 20</a></li>
+            <li><a class="h" href="#contact">Dashboard</a></li>
+            <li><a class="h" href="#about">About</a></li>
+        </ul>
+    </header>
+    <div style="color:red;">
+      <div align='center'>  Sket Dance</div>
+    </div>
+    <br />
+    <video onplay="func1()" onpause="func2()" title="Sket Dance Trailer" width="1100" controls="controls" align="left" style=" background: black; display:block; margin-right:10px;opacity:0.7;" poster="poster.png">
+        <source src="SKET DANCE Trailer.mp4" type="video/mp4" />
+    </video>
+    <br />
+    <div2>
+        <section_title>Synopsis</section_title><hr>
+        <span style='font-family:Brush Script MT;font-weight: 600;font-size:25px'>
+            Chihaya Ayase, a strong-willed and tomboyish girl, grows up under the shadow of her older sister. With no dreams of her own, she is contented with her share in life till she meets Arata Wataya. The quiet transfer student in her elementary class introduces her to competitive karuta, a physically and mentally demanding card game inspired by the classic Japanese anthology of Hundred Poets. Captivated by Arata's passion for the game and inspired by the possibility of becoming the best in Japan, Chihaya quickly falls in love with the world of karuta. Along with the prodigy Arata and her haughty but hard-working friend Taichi Mashima, she joins the local Shiranami Society. The trio spends their idyllic childhood days playing together, until circumstances split them up.
+            <br />
+            Now in high school, Chihaya has grown into a karuta freak. She aims to establish the Municipal Mizusawa High Competitive Karuta Club, setting her sights on the national championship at Omi Jingu. Reunited with the now indifferent Taichi, Chihaya's dream of establishing a karuta team is only one step away from becoming true: she must bring together members with a passion for the game that matches her own.
+
+    </div2>
+    <div2>
+        <section_title>Ratings and Reviews</section_title><hr>
+        <img src="sket.png" height="200" style=" float: left; margin-left:10px; background-color: rgba(0, 0, 0, 1);" />
+        <img src="sket_bar.png" height=200 width=400 style="margin-left:50px; background-color: rgba(0, 0, 0, 1);" /><br />
+        <section_title>Reviews</section_title><hr />
+        <review id="content">
+            <score>10/10 <br/><br/><reviewer>THEM Anime</reviewer></score>
+
+
+            <p>Apart from having studied a handful of the <i>Hyakunin Isshu</i> poems in college, I essentially came into this with no working knowledge of the game of karuta or its competitive culture.  In fact, when I started watching this show, completely on a whim (and a strong recommendation from Mippa), I was in a two-year anime hiatus.  I figured, hey, this could be something like <b>Hikaru no Go</b> but for an older market, and I figured it'd be a nice way to pass the time, instead of trying to slog through <i>moe</i> rom-com series #241.  It turns out <b>Chihayafuru</b> is the show that would bring me back fully into anime.  Simply put, this is a great show with fantastic characters, and it's the perfect antidote for folks who need a break from the breakneck pace of explosions and fan service that has flooded anime since time immemorial.
+            <p>Scratch that.
+            <p>Shows like <b>Chihayafuru</b> are what make anime worth watching.
+            <p>What I appreciate about this show is that it very pointedly <i>isn't</i> like most titles out there today - its leisurely pace and emphasis on storyline gives plenty of time for each of the characters to develop into genuinely interesting and unique personalities.  We get to see what is essentially the main trio (Chihaya and her two childhood friends Arata and Taichi) in an extended flashback that effectively sets up the remainder of the series' drama, though the romantic overtones that come in later never overwhelm Chihaya's desire to better her karuta club and her own skills as a player.  What's important to note is that, while karuta is clearly a unifying theme and there is some analysis of gameplay and strategy here and there, the emphasis of this show is clearly on its characters.
+            <p>Pleasantly quirky and occasionally stubborn, Chihaya (Asami Seto - Yoshino Takatsuki in <b>Wandering Son</b> and Lan in <b>Lagrange - The Flower of Rinne</b>) is one of my favorite characters of 2011 because she's so utterly and unapologetically nerdy.  (Though, of course, given that this is anime, she's also drop-dead gorgeous.)  She is also guileless, naive, and idealistic, but never ever cloying.  Unlike many other sports-type shows, the other characters are fully realized, rather than being props to emphasize varying aspects of the game.  I'll leave the viewer to explore this facet themselves, as describing each character would take up a fair bit more space than I will allow myself here (though I will give a particular shout-out to kimono-shop girl / junior poetry scholar Kanade Oe), but it's safe to say that the supporting cast comes up quite big here.
+            <p>While there isn't really any "action" to speak of (the closest we get are cherry blossom petals and autumn leaves), the animators do a great job setting the mood of each episode, while emphasizing the emotional and intellectual intensity that frames competitive karuta matches.  I had no idea that competitive karuta was televised, but that shouldn't surprise too many people given the depth of both sport and poetic tradition in Japan.  At times, the characters of <b>Chihayafuru</b> take the time to explain the meaning and feeling behind some of the poems, which are vibrant, beautiful stories in and of themselves, often breathtakingly realized onscreen.   It is times like this that remind us of how anime can indeed be high art.
+            <p>If there are any quibbles, it is that this show is often so focused on its subject matter that it's possible to lose audiences when game mechanics and occasional jargon like "pillow words" get thrown about.  There's also one recap episode that really doesn't do much to contribute to the overall narrative, though the vignette about Chihaya's sister ends up being as heartwarming as the rest of the series.   The big thing is that there is virtually nothing here for fans of action, fan service, or the <i>moe</i> character aesthetic -- it's clearly intended as cultural nostalgia aimed at young Japanese housewives and office ladies, so it's almost something of a happy accident that it ends up appealing to anyone outside that demographic.
+            <p>In an age where shows compete to be the flashiest and fastest, <b>Chihayafuru</b>'s simple elegance is easy to overlook and dismiss, but it doesn't take a doctorate in classical Japanese literature to realize a good story when you see one.</p>
+
+            <p><i>A gentle, appealing series with likable characters, <B>Chihayafuru</B> is a quintessential sports-anime despite its unusual subject matter, and while it may not appeal to action or fan service junkies, anime fans owe it to themselves to broaden their horizons and give this show an honest chance.</i> &mdash; <a href='mailto:carlos.ross@gmail.com'>Carlos Ross</a></p>
+
+            <p><i><b>Recommended Audience:</b> There is very, very little objectionable content here - an ancillary character or two dies of illness, and there might be some mild violence in the form of corporal punishment. One female character is noted in conversation to be well-endowed, but in a subversion of virtually every anime cliche ever, she is always very modestly dressed. Best for young teens and above, but primarily due to the emotional and intellectual level of this show being above the heads of most younger children, rather than anything offensive.</i></p>
+
+
+
+        </review>
+
+        <button id="cont" style="background-color:indigo ; color:white; border:0; font-family:fantasy;">Read More</button>
+
+
+
+        <review id="content1">
+            <score>8.5/10 <br/><br/><reviewer>Geek Clinic</reviewer></score>
+            <p style="text-align:center;"><strong>Director: </strong>Kou Matsuo</p>
+            <p style="text-align:center;"><strong>Writer:</strong> Ichiro Okouchi</p>
+            <p style="text-align:center;"><strong>Animation Studio:</strong> Sunrise</p>
+            <p style="text-align:center;"><strong>Version Watched: </strong>Subbed</p>
+            <p style="text-align:center;">When a friend of mine caught wind of the fact that I was calling Chihayafuru my first “sports anime” I had ever watched she seemed rather upset. It’s true, though, I haven’t touched any of the classics like Kuroko no Basuke or Hajime no Ippo and Chihayafuru doesn’t really fall into any other genre. It’s all about teamwork, friendship and honest competition, taking what might seem like a boring pastime and making it truly exciting. I can’t tell you whether Chihayafuru breaks any new ground, but it was incredibly popular when it first aired and it’s easy to see why.</p>
+            <p style="text-align:center;">Ayase Chihaya first encountered Karuta when she met Wataya Arata as a child. The game which combines memorization, reflex and knowledge of a select set of iconic Japanese poems was introduced to her by Arata when she stood by him against the bullying he suffered from the rest of their class. Together with Chihaya’s other friend Mashima Taichi, the three learned Karuta as a team and formed memories they could never forget. Now, as Chihaya enters high school, she finds herself the sole proponent for beginning a competitive Karuta club, with Arata having moved far away and Taichi having lost interest in the game. Chihaya’s will does not waver, however, as she aims to master the art of Karuta to become Japan’s, and the world’s, next Queen.</p>
+            <p style="text-align:center;"><span id="more-3669"></span></p>
+            <p style="text-align:center;"><img data-attachment-id="3682" data-permalink="review2_1.jpg" data-orig-file="review2_1.jpg" data-orig-size="1280,720" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Chihayafuru3" data-image-description="" data-medium-file="https://thegeekclinic.files.wordpress.com/2016/08/chihayafuru3.jpg?w=640?w=300" data-large-file="https://thegeekclinic.files.wordpress.com/2016/08/chihayafuru3.jpg?w=640?w=640" class="alignnone size-full wp-image-3682" src="https://thegeekclinic.files.wordpress.com/2016/08/chihayafuru3.jpg?w=640" alt="Chihayafuru3.jpg" srcset="https://thegeekclinic.files.wordpress.com/2016/08/chihayafuru3.jpg?w=640 640w, https://thegeekclinic.files.wordpress.com/2016/08/chihayafuru3.jpg 1280w, https://thegeekclinic.files.wordpress.com/2016/08/chihayafuru3.jpg?w=150 150w, https://thegeekclinic.files.wordpress.com/2016/08/chihayafuru3.jpg?w=300 300w, https://thegeekclinic.files.wordpress.com/2016/08/chihayafuru3.jpg?w=768 768w, https://thegeekclinic.files.wordpress.com/2016/08/chihayafuru3.jpg?w=1024 1024w" sizes="(max-width: 640px) 100vw, 640px" /></p>
+            <p style="text-align:center;">One of the reasons I’ve been a little hesitant to pick up sport-focused anime is that I’m simply not into sports (playing is fine, watching doesn&#8217;t interest me). So how could a show about whacking away cards containing snippets of poetry I can’t even understand possibly keep me entertained? While I’m still not entirely sure how it managed, Chihayafuru did just that. The usual anime themes of friendship are transformed into ones of true teamwork and learning to work together in pursuit of a goal that only really asks for individual achievement. It’s not the game that interests so much as it is the passion of those playing it, their successes and triumphs and the thought patterns rushing through their heads as they compete. That said, Chihayafuru does a great job of showcasing Karuta as a sport and explaining its mechanics without ever getting bogged down in exposition. By the end of the series I was able to watch actual matches and follow them without any trouble at all (though I can’t say I actually finished one…those things are <em>long</em>). I was never bored during the matches and given the subject material I think that’s very impressive.</p>
+            <p style="text-align:center;">In following the actions of the competitors the show <em>does</em> ask you to stretch your imagination a little but never becomes too far-fetched and never picks up plot developments at random. Realism comes into the picture when it comes to the characters, as their internal and external struggles are easy to relate to while also making for entertaining watching. Individuals are consistent within their own unique personalities and it’s easy to root for each and every one of them while following the team as a whole. All in all, Chihayafuru has some deeply satisfying moments while remaining both believable and exciting. That said, however, I need to mention some slightly less positive aspects. Yes, this is another case where character relationships never really move from the start line despite appearing in the spotlight reasonably regularly (though there’s probably material for a third season where this could be developed). No, I can’t say I often really looked forward to getting back to the show despite enjoying myself while watching. And yes, that’s really all I have to complain about.</p>
+            <p style="text-align:center;"><img data-attachment-id="3677" data-permalink="review2_2.jpg" data-orig-file="review2_2.jpg" data-orig-size="1024,819" data-comments-opened="1" data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}" data-image-title="Chihayafuru" data-image-description="" data-medium-file="review2_1.jpg?w=640?w=300" data-large-file="https://thegeekclinic.files.wordpress.com/2016/08/chihayafuru.jpg?w=640?w=640" class="alignnone size-full wp-image-3677" src="https://thegeekclinic.files.wordpress.com/2016/08/chihayafuru.jpg?w=640" alt="Chihayafuru.jpg" srcset="https://thegeekclinic.files.wordpress.com/2016/08/chihayafuru.jpg?w=640 640w, https://thegeekclinic.files.wordpress.com/2016/08/chihayafuru.jpg?w=150 150w, https://thegeekclinic.files.wordpress.com/2016/08/chihayafuru.jpg?w=300 300w, https://thegeekclinic.files.wordpress.com/2016/08/chihayafuru.jpg?w=768 768w, https://thegeekclinic.files.wordpress.com/2016/08/chihayafuru.jpg 1024w" sizes="(max-width: 640px) 100vw, 640px" /></p>
+            <p style="text-align:center;">Art-wise Chihayafuru utilises a style that suits it to a T. Leaning towards shoujo-styled visuals gives it the ability to showcase some breath-taking scenery and character close-ups that go a long way toward forming the competitive atmosphere shows like this need. It’s easy to become wrapped up in events and the art is a major reason for that. Karuta allows for some interesting vocal work that anime fans may not have been exposed to previously, which for some may be a big plus as well. The openings and endings were also very fitting and the majority of them have made their way to my playlist.</p>
+            <p style="text-align:center;"><strong>Summary</strong> – While some may argue the “sports” label for Chihayafuru, I would assert that the series earns it repeatedly. The game of Karuta is made interesting and the team atmosphere the show cultivates is impressive. Characters are realistic and easy to identify with as well as diverse, and their efforts to work together are that much more poignant for that reason. Every single component of this anime comes together to form a cohesive whole, with the technical aspects backing up both the writing and concept wonderfully. While individual episodes can be exciting, however, I was never quite lusting after more in between viewing sessions and there are several plot threads (particularly regarding inter-character relationships) that are revealed but never pursued. Regardless of any minor complaints I might have had, though, Chihayafuru makes for a very enjoyable experience and The Geek Clinic happily recommends it.</p>
+            <p style="text-align:center;"><strong>Score: 8.5/10 – Good</strong><strong> </strong></p>
+            <p style="text-align:center;">P.S: The second season is definitely better than the first, so if you’re on the fence about continuing then just go for it!</p>
+        </review>
+        <button id="cont1" style="background-color:indigo ; color:white; border:0; font-family:fantasy;">Read more</button>
+        <review id="content2">
+            <score>8/10 <br/><br/><reviewer>Nihon Review</reviewer></score>
+            <p>
+                <strong>Title:</strong> Chihayafuru<br />
+                <strong>Genre:</strong> Drama/Romance<br />
+                <strong>Company:</strong> Madhouse Studios<br />
+                <strong>Format:</strong> 25 episodes<br />
+                <strong>Dates:</strong> 5 Oct 2011 – 28 Mar 2012
+            </p>
+            <p><strong>Synopsis: </strong>Ayase Chihaya is a girl who spent much of her childhood vicariously living through her sister’s dreams instead of her own. Her life changes when a boy named Wataya Arata teaches her that she should have a dream of her own.  It is at this time that Chihaya discovers a passion for the card game karuta. Alongside Arata and another friend, Mashima Taichi, she chases her newfound dream of becoming the world’s best karuta player. In high school, Chihaya continues chasing her dream while hoping to one day reunite with her now separated friends.</p>
+            <p>
+                <strong><span style="text-decoration: underline;">The Highlights</span></strong><br />
+                <strong>Passion:</strong> The passion of the characters is personally effectual, admirable, and inspirational.<br />
+                <strong>Complete package:</strong> Excels in all areas whether it is visuals, audio, or writing.<br />
+                <strong>Drama:</strong> Sometimes can be a little melodramatic, but is usually competent.
+            </p>
+            <p><img src="review3_1.jpg" alt="" width="160" height="120" align="middle" border="0" /><img src="review_3_2.jpg" alt="" width="160" height="120" align="middle" border="0" /><img src="review3_3.jpg" alt="" width="160" height="120" align="middle" border="0" /></p>
+            <p>Combining the best aspects of josei and sports shonen, <em>Chihayafuru</em> weaves an emotionally complex and endearing story about a group of people who play karuta. Surely a card game would not seem like the most riveting topic for a compelling character driven story, but just like the activities in other sports-themed anime, karuta in <em>Chihayafuru</em> molds and defines each character’s hopes and desires in a spectacular fashion. Furthermore, owed to its crisp and down to earth style, it is an easy, approachable watch. Suffice to say, this is exactly the type of anime that does get made enough.</p>
+            <p>Central to the overall story at hand is the idea of discovering one’s own passion. This is seen in several different ways through the characters and the way they play karuta. Some characters just love the art and history behind the game, others enjoy the mental challenge of it, some find inspiration and love for it from others, and some just have a natural passion for it. Whatever the reason, the show presents a different array of manners in which people devote themselves entirely to something they love. Each character’s dilemmas and special relation with karuta serve as an inspirational example of the beauty of following one’s passions and desires to its fullest potential.</p>
+            <p>One thing immediately appreciable about <em>Chihayafuru</em> is how it delivers the full package, never feeling lacking in any one particular area. The visuals are colorful and vibrant, really bringing to life the panels of the manga. The music is a nice blend of orchestral pieces, which are always well placed with proper build up for maximum impact. The writing is simply exquisite, with every moment always feeling important to the greater picture at hand. Studio <span style="text-decoration: underline;">Madhouse</span> and director <span style="text-decoration: underline;">Asaka Morio</span>, the same team that brought us <em><a href="http://www.nihonreview.com/anime/nana/">Nana</a></em>, showcase a superb production and have affirmed in my mind that they are the go to combination for josei and shoujo manga adaptions.</p>
+            <p>If there is one criticism I do have of <em>Chihayafuru</em> it is that it sometimes feels too melodramatic. Characters sometimes cry over the littlest things, making the experience at times feel hammy. I can understand when people break down after losing a game they poured in all they had mentally and emotionally, but it was a stretch for me to see people crying over just watching others play. Still, this is no major determent to enjoyment of the show, and for the most part the drama is  solid.</p>
+            <p><em>Chihayafuru</em> is a defining example of a quality anime that does not need to rely on grandiose plots or convoluted philosophical contentions to communicate anything meaningful. The characters are easy to understand and grow fond of, but are also layered and interesting. Moreover, the message is simple, and the story straightforward, but everything that goes into it is communicated with so much real, raw emotion that I could not help but find it touching.  All I can say is if <span style="text-decoration: underline;">Madhouse</span> never comes back with a season two, it would be a crying shame as the ending just leaves the viewer pining for more.</p>
+            <p align="center">
+                <strong>The Rating:</strong> 8<br />
+                <img src="http://www.nihonreview.com/images/rank8.png" alt="8/10" border="0" />
+            </p>
+            <p align="center"><strong>Reviewed by:</strong> Reckoner</p>
+
+        </review>
+        <button id="cont2" style="background-color:indigo ; color:white; border:0; font-family:fantasy;">Read more</button>
+    </div2>
+    <div2 id='addr'>
+    	<button id='add' style="background-color:indigo ; color:white; border:0; font-family:fantasy;" onclick="addreview()">
+    		Add Review
+    	</button><br/>
+    </div2>
+    <br />
+    <script>
+        document.querySelector("#cont").addEventListener('click', function () {
+            document.querySelector('#content').style.height = 'auto';
+            this.style.display = 'none';
+        });
+        document.querySelector('#cont1').addEventListener('click', function () {
+            document.querySelector('#content1').style.height = 'auto';
+            this.style.display = 'none';
+        });
+        document.querySelector('#cont2').addEventListener('click', function () {
+            document.querySelector('#content2').style.height = 'auto';
+            this.style.display = 'none';
+        });
+        function func1() {
+            var x = document.getElementsByTagName('video');
+            x[0].style.opacity = '1';
+        }
+        function func2() {
+            var x = document.getElementsByTagName('video');
+            x[0].style.opacity = '0.9';
+        }
+        var i=1,key1=10;
+        if(rev==undefined){
+        	var rev=new Array();
+        }
+        else{
+        	var rev=(localStorage.getItem(key1)).split(',');
+
+        }
+        function load()
+        {
+
+        	if(localStorage.getItem(key1))
+        	{
+
+        		var content=(localStorage.getItem(key1)).split(',');
+        		for(var j=0;j<content.length;j++)
+        		{
+        			var usr=document.createElement('review');
+        			var pusr=document.createElement('p');
+        			pusr.style.fontSize='16px';
+        			pusr.textContent=content[j];
+        			var x=document.getElementById('addr');
+        			x.appendChild(usr);
+        			usr.appendChild(pusr);
+        		}
+        		//console.log((localStorage.getItem(key)).split(','));
+        	}
+        }
+        function addreview()
+        {
+
+        	var x=document.getElementById('addr');
+        	//var form=document.createElement('')
+        	var text=document.createElement('textarea');
+        	text.setAttribute('placeholder','add your review');
+        	text.setAttribute('width','auto');
+        	x.appendChild(text);
+        	var submit=document.createElement('button');
+        	submit.setAttribute('style',"background-color:CC0000 ; color:white; border:0; font-family:fantasy;");
+        	submit.innerHTML='Submit';
+        	x.appendChild(submit);
+        	submit.addEventListener('click',addfunc);
+        	function addfunc()
+        	{
+        		var usr=document.createElement('review');
+        		var pusr=document.createElement('p');
+        		pusr.style.fontSize='16px';
+        		pusr.textContent=text.value;
+        		x.insertBefore(usr,text);
+        		usr.appendChild(pusr);
+        		x.removeChild(text);
+        		x.removeChild(submit);
+        		rev.push(text.value);
+        		//var divr=document.getElementById('addr');
+        		localStorage.setItem(key1,rev);
+        	}
+        }
+    </script>
+    <div>
+    <footer>
+    	<p class='copyright'>&copy;Copyright 2017-2020 All Rights Reserved</p>
+    </footer></div>
+    </body>
+    </html>
